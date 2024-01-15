@@ -11,6 +11,10 @@ Web Developer Portfolio
 
 ## Credits
 
+Title of page. (Year, Month Date). Site name. Retrieved Month Date, Year, from URL
+
+How To Position Text Over an Image. (n.d.). W3Schools. Retrieved January 14, 2024, from https://www.w3schools.com/howto/howto_css_image_text.asp
+
 The Most Beautiful Pink Flowers [Photograph]. Photography Blog. (n.d.). https://pphotography-blog.blogspot.com/2012/01/most-beautiful-pink-flowers.html
 
 University of Toronto. (2023). Coding Boot Camp [Source Code]. 
