@@ -27,10 +27,11 @@ header h1 .last-name {
 
 /* Values for unordered list in header */
 .header nav {
+  display: flex;
   padding-top: 15px;
   margin-right: 20px;
   float: right;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* List-style-type: none removes any type of bullet icon from unordered list at top right */
@@ -41,6 +42,10 @@ header h1 .last-name {
 .header nav ul li {
   display: inline-block;
   margin-left: 45px;
+  /*display: flex;*/
+  flex-wrap: ;
+  /* Defines how to distribute the empty space between child elements 
+  justify-content: space-between;*/
 }
 
 a {
@@ -56,13 +61,15 @@ a {
   background-size: cover;
   background-position: center;
   position: relative;
+  flex: 1 0 200px;
 }
 
 .subtitle {
   float: right;
-  margin-left: 25px;
+  margin-left: 35px;
   height: 290px;
   width: 100%;
+  flex: 1 0 200px;
 }
 
 /*.container {
@@ -90,49 +97,121 @@ a {
   /*text-align: right; 
   color: white;*/
   top: -60px;
-  right: -900px;
+  right: -800px;
   font-size: x-large;
   font-weight: bolder;
+  
 }
 /* How To Position Text Over an Image, n.d.). */
 
 .content {
-  width: 60%;
+  width: 750px;
   display: inline-block;
-  margin-left: 500px;
+  margin-left: 450px; 
 }
 
-.text-left {
+/*.text-left {
+  margin-bottom: 20px;
+  padding: 150px;
+  height: 300px;
+  color: #ffffff;
+  font-size: 55px;
+  text-align: left;
+} 
+
+.about-me h2,
+.work h2,
+.contact-me h2 {
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
   color: #ffffff;
-}
+  font-size: 55px;
+  text-align: left;
+}*/
 
 #about-me {
-  border-left: 6px solid #373b3c;
+  /*border-left: 6px solid #373b3c;
   height: 300px;
-  position: absolute;
-  float: left;
-  margin-left: -350px;
+  /*position: absolute;
+  text-align: left; */
+  left: 50%;
+  margin-left: -150px;
   top: 100;
-}
-
-#work {
-  border-left: 16px solid #373b3c;
-  height: 300px;
-  position: absolute;
-  float: left;
-  margin-left: -350px;
-  top: 100;
+  font-size: 25px;
 } 
 
-/*#contact-me {
-  border-left: 16px solid #373b3c;
-  height: 100px;
-  position: absolute;
+#work {
+  /*border-left: 6px solid #373b3c;
+  height: 300px;
+  position: absolute;*/
   left: 50%;
-  margin-left: -350px;
+  margin-left: -150px;
   top: 100;
-} */
+  font-size: 25px;
+} 
+
+#contact-me {
+  /*border-left: 6px solid #373b3c;
+  height: 100px;*/
+  /*position: absolute;*/
+  left: 50%;
+  margin-left: -150px;
+  top: 100;
+  font-size: 25px;
+} 
 /* How to Vertical Line, n.d.). */
+
+.content text-left {
+  /*border-left: 6px solid #373b3c;
+  height: 300px;
+  /*position: absolute;*/
+  /*float: right;*/
+  margin-left: -150px;
+  top: 100;
+  font-size: 15px;
+} 
+
+/*.content text-left {
+  /*border-left: 6px solid #373b3c;
+  height: 300px;
+  position: absolute;
+  float: right;
+  left: 50%;
+  margin-left: -250px;
+  top: 100;
+  font-size: 15px;*/
+} 
+
+.content text-left {
+  /*border-left: 6px solid #373b3c;
+  height: 100px;*/
+  position: absolute;
+  float: right;
+  left: 50%;
+  margin-left: -250px;
+  top: 100;
+  font-size: 15px;
+} 
+
+section nav ul li {
+  list-style-type: none; 
+  display: inline-block;
+  margin-right: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  main {
+    flex-direction: column;
+  }
+
+   {
+    padding-right: 0;
+  }
+
+  section {
+    width: 100%;
+    text-align: center;
+  }
+}
