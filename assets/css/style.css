@@ -1,31 +1,36 @@
+/* Universal values applied */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /*font-family: "Goudy Bookletter 1911", sans-serif;*/
-  font-family: "Georgia";
+  font-family: "Georgia"; 
 }
-body {
+
+/* Body background color and text color */
+body { 
   background-color: rgb(226, 60, 143);
   color: white;
 }
+
+/* Header values */
 .header {
   padding: 20px;
   background-color: #373b3c;
   color: #ffffff;
 }
 
+/* Values for name in header */
 .header h1 {
   display: inline-block;
   font-size: 48px;
 }
 
-/* Lawrence header last name bolder text*/
+/* Lawrence header with last name bolder text
 header h1 .last-name {
   font-weight: bolder;
-}
+}*/
 
-/* Values for unordered list in header */
+/* Values for unordered navagation list in header */
 .header nav {
   display: flex;
   padding-top: 15px;
@@ -92,32 +97,26 @@ a {
   background-color: #373b3c;
 } */
 
+/* Subtitle over avatar */
 .bottom-right {
   position: relative;
-  /*text-align: right; 
-  color: white;*/
   top: -60px;
   right: -800px;
   font-size: x-large;
   font-weight: bolder;
-  
-}
-/* How To Position Text Over an Image, n.d.). */
+} /* How To Position Text Over an Image, n.d.). */
 
+/* Main content with text values for text placement*/
 .content {
   width: 750px;
   display: inline-block;
   margin-left: 450px; 
-}
-
-/*.text-left {
-  margin-bottom: 20px;
-  padding: 150px;
-  height: 300px;
-  color: #ffffff;
-  font-size: 55px;
+  /*border-left: 6px solid #373b3c;
   text-align: left;
-} 
+  display: inline-block;
+  float: left;
+  height: 475px;
+}
 
 .about-me h2,
 .work h2,
@@ -127,46 +126,42 @@ a {
   height: 300px;
   color: #ffffff;
   font-size: 55px;
-  text-align: left;
-}*/
-
-#about-me {
-  /*border-left: 6px solid #373b3c;
-  height: 300px;
-  /*position: absolute;
-  text-align: left; */
-  left: 50%;
-  margin-left: -150px;
-  top: 100;
-  font-size: 25px;
-} 
-
-#work {
-  /*border-left: 6px solid #373b3c;
-  height: 300px;
-  position: absolute;*/
-  left: 50%;
-  margin-left: -150px;
-  top: 100;
-  font-size: 25px;
-} 
-
-#contact-me {
-  /*border-left: 6px solid #373b3c;
-  height: 100px;*/
-  /*position: absolute;*/
-  left: 50%;
-  margin-left: -150px;
-  top: 100;
-  font-size: 25px;
+  border-left: 6px solid #373b3c;
+  display: inline-block
+  border: 1px inset;
+  height: 295px;
+  float: left*/
 } 
 /* How to Vertical Line, n.d.). */
 
+/* About me section values */
+#about-me {
+  left: 50%;
+  margin-left: -150px;
+  top: 100;
+  font-size: 25px;
+  padding-bottom: 15px;
+} 
+
+/* Work section values */
+#work {
+  left: 50%;
+  margin-left: -150px;
+  top: 100;
+  font-size: 25px;
+  padding-bottom: 15px;
+} 
+
+/* Contact me section values */
+#contact-me {
+  left: 50%;
+  margin-left: -150px;
+  top: 100;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
 .content text-left {
-  /*border-left: 6px solid #373b3c;
-  height: 300px;
-  /*position: absolute;*/
-  /*float: right;*/
   margin-left: -150px;
   top: 100;
   font-size: 15px;
@@ -184,8 +179,6 @@ a {
 } 
 
 .content text-left {
-  /*border-left: 6px solid #373b3c;
-  height: 100px;*/
   position: absolute;
   float: right;
   left: 50%;
@@ -194,24 +187,10 @@ a {
   font-size: 15px;
 } 
 
+/* Unordered list of contact information values */
 section nav ul li {
   list-style-type: none; 
   display: inline-block;
   margin-right: 75px;
-}
-
-@media screen and (max-width: 768px) {
-  header,
-  main {
-    flex-direction: column;
-  }
-
-   {
-    padding-right: 0;
-  }
-
-  section {
-    width: 100%;
-    text-align: center;
-  }
+  padding-bottom: 15px;
 }

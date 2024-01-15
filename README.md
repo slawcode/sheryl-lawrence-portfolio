@@ -9,6 +9,10 @@ Web Developer Portfolio
 
 - No authentications are needed to access the website.
 
+![Screenshot of my portfolio open in browser](./assets/images/Screenshot%202024-01-15%20at%202.41.30%20PM%20(2).png)
+
+[x] [y]
+
 ## Credits
 
 Title of page. (Year, Month Date). Site name. Retrieved Month Date, Year, from URL
