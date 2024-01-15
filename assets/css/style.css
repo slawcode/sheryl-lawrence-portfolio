@@ -89,17 +89,50 @@ a {
   position: relative;
   /*text-align: right; 
   color: white;*/
-  top: -50px;
-  right: -1050px;
+  top: -60px;
+  right: -900px;
+  font-size: x-large;
   font-weight: bolder;
 }
-/* How To Position Text Over an Image, n.d.).
+/* How To Position Text Over an Image, n.d.). */
 
-/*.bottom-right {
-  position: absolute;
-  bottom: 200px;
-  right: 20px; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-500%, -50%);
+.content {
+  width: 60%;
+  display: inline-block;
+  margin-left: 500px;
 }
+
+.text-left {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  color: #ffffff;
+}
+
+#about-me {
+  border-left: 6px solid #373b3c;
+  height: 300px;
+  position: absolute;
+  float: left;
+  margin-left: -350px;
+  top: 100;
+}
+
+#work {
+  border-left: 16px solid #373b3c;
+  height: 300px;
+  position: absolute;
+  float: left;
+  margin-left: -350px;
+  top: 100;
+} 
+
+/*#contact-me {
+  border-left: 16px solid #373b3c;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -350px;
+  top: 100;
+} */
+/* How to Vertical Line, n.d.). */
