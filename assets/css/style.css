@@ -25,14 +25,8 @@ body {
   font-size: 48px;
 }
 
-/* Lawrence header with last name bolder text
-header h1 .last-name {
-  font-weight: bolder;
-}*/
-
 /* Values for unordered navagation list in header */
 .header nav {
-  display: flex;
   padding-top: 15px;
   margin-right: 20px;
   float: right;
@@ -47,10 +41,6 @@ header h1 .last-name {
 .header nav ul li {
   display: inline-block;
   margin-left: 45px;
-  /*display: flex;*/
-  flex-wrap: ;
-  /* Defines how to distribute the empty space between child elements 
-  justify-content: space-between;*/
 }
 
 a {
@@ -58,6 +48,7 @@ a {
   text-decoration: none;
 }
 
+/* Avatar picture values */
 .picture {
   height: auto;
   max-width: 100%; 
@@ -77,26 +68,6 @@ a {
   flex: 1 0 200px;
 }
 
-/*.container {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 100px;
-  background-color: #373b3c;
-  color: #ffffff;
-  padding: 20px;
-} */
-
-/* .container {
-  /* A flex-basis of 200px sets the starting width */
-  /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space 
-  flex: 1 0 200px; 
-  padding: 10px;
-  text-align: right;
-  border-style: solid; 
-  border-width: 1px;
-  background-color: #373b3c;
-} */
-
 /* Subtitle over avatar */
 .bottom-right {
   position: relative;
@@ -115,9 +86,10 @@ a {
   text-align: left;
   display: inline-block;
   float: left;
-  height: 475px;
+  height: 475px; */
 }
 
+/* H2 balues for about me, work and contact me sections */
 .about-me h2,
 .work h2,
 .contact-me h2 {
@@ -130,9 +102,8 @@ a {
   display: inline-block
   border: 1px inset;
   height: 295px;
-  float: left*/
+  float: left
 } 
-/* How to Vertical Line, n.d.). */
 
 /* About me section values */
 #about-me {
@@ -158,24 +129,31 @@ a {
   margin-left: -150px;
   top: 100;
   font-size: 25px;
-  padding-bottom: 15px;
+  /* Grab cursor */
+  text-decoration: none;
+  color: white;
+  cursor: grab;
+}
+
+/* Text appearing when mouse is positioned over "Contact Me" text/section */
+#contact-me:hover::after {
+  content: "Ways to get in touch!";
+  position: absolute;
+  left: 0px;
+  bottom: 24px;
+  min-width: 200px;
+  border: 1px white solid;
+  background-color: #373b3c;
+  padding: 12px;
+  color: #fff;
+  font-size: 80%;
+  z-index: 1;
 }
 
 .content text-left {
   margin-left: -150px;
   top: 100;
   font-size: 15px;
-} 
-
-/*.content text-left {
-  /*border-left: 6px solid #373b3c;
-  height: 300px;
-  position: absolute;
-  float: right;
-  left: 50%;
-  margin-left: -250px;
-  top: 100;
-  font-size: 15px;*/
 } 
 
 .content text-left {
