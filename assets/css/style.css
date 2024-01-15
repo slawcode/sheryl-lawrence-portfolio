@@ -1,3 +1,174 @@
+/* Universal values applied */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Georgia"; 
+}
+
+/* Body background color and text color */
+body { 
+  background-color: rgb(226, 60, 143);
+  color: white;
+}
+
+/* Header values */
+.header {
+  padding: 20px;
+  background-color: #373b3c;
+  color: #ffffff;
+}
+
+/* Values for name in header */
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+/* Values for unordered navagation list in header */
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 25px;
+}
+
+/* List-style-type: none removes any type of bullet icon from unordered list at top right */
+.header nav ul {
+  list-style-type: none; 
+}
+
+.header nav ul li {
+  display: inline-block;
+  margin-left: 45px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Avatar picture values */
+.picture {
+  height: auto;
+  max-width: 100%; 
+  margin-bottom: -100px;*/
+  background-image: url("../images/pink-flowers-avatar.jpg");*/
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex: 1 0 200px;
+}
+
+.subtitle {
+  float: right;
+  margin-left: 35px;
+  height: 290px;
+  width: 100%;
+  flex: 1 0 200px;
+}
+
+/* Subtitle over avatar */
+.bottom-right {
+  position: relative;
+  top: -60px;
+  right: -800px;
+  font-size: x-large;
+  font-weight: bolder;
+} /* How To Position Text Over an Image, n.d.). */
+
+/* Main content with text values for text placement*/
+.content {
+  width: 750px;
+  display: inline-block;
+  margin-left: 450px; 
+  /*border-left: 6px solid #373b3c;
+  text-align: left;
+  display: inline-block;
+  float: left;
+  height: 475px; */
+}
+
+/* H2 balues for about me, work and contact me sections */
+.about-me h2,
+.work h2,
+.contact-me h2 {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  color: #ffffff;
+  font-size: 55px;
+  border-left: 6px solid #373b3c;
+  display: inline-block
+  border: 1px inset;
+  height: 295px;
+  float: left
+} 
+
+/* About me section values */
+#about-me {
+  left: 50%;
+  margin-left: -150px;
+  top: 100;
+  font-size: 25px;
+  padding-bottom: 15px;
+} 
+
+/* Work section values */
+#work {
+  left: 50%;
+  margin-left: -150px;
+  top: 100;
+  font-size: 25px;
+  padding-bottom: 15px;
+} 
+
+/* Contact me section values */
+#contact-me {
+  left: 50%;
+  margin-left: -150px;
+  top: 100;
+  font-size: 25px;
+  /* Grab cursor */
+  text-decoration: none;
+  color: white;
+  cursor: grab;
+}
+
+/* Text appearing when mouse is positioned over "Contact Me" text/section */
+#contact-me:hover::after {
+  content: "Ways to get in touch!";
+  position: absolute;
+  left: 0px;
+  bottom: 24px;
+  min-width: 200px;
+  border: 1px white solid;
+  background-color: #373b3c;
+  padding: 12px;
+  color: #fff;
+  font-size: 80%;
+  z-index: 1;
+}
+
+.content text-left {
+  margin-left: -150px;
+  top: 100;
+  font-size: 15px;
+} 
+
+.content text-left {
+  position: absolute;
+  float: right;
+  left: 50%;
+  margin-left: -250px;
+  top: 100;
+  font-size: 15px;
+} 
+
+/* Unordered list of contact information values */
+section nav ul li {
+  list-style-type: none; 
+  display: inline-block;
+  margin-right: 75px;
+  padding-bottom: 15px;
 }
